@@ -24,39 +24,32 @@ body
 	font-family: 'Roboto', sans-serif
 	overflow-x: hidden
 	color: $text
-
+ul
+	padding: 0
+	margin: 0
+	list-style: none
+a
+	display: inline-block
+	color: inherit
+	&:hover
+		text-decoration: none
 // Custom Sass / Remove before use
-
+.fg1
+	flex-grow: 1
 .container
-	max-width: 700px
+	max-width: 1000px
 	padding:
 		right: $gutter/2
 		left: $gutter/2
 	margin:
 		left: auto
 		right: auto
-
+.flex_row
+	display: flex
+	align-items: center
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
-
-.example-grid
-	display: grid
-	grid-gap: $gutter
-	grid-template-columns: 1fr 1fr
-	grid-template-areas: "left right"
-	> div:first-child
-		grid-area: left
-	> div:last-child
-		grid-area: right
-	+media-breakpoint-down(xs)
-		display: block
-		> div
-			padding: $gutter/2 0
-	
-.example-img
-	width: 100%
-
 .parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
 	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
