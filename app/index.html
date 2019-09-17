@@ -15,11 +15,6 @@
   </head>
 
   <body>
-    <!-- <img class="lazy img-responsive example-img"
-			src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-			data-src="img/@1x/preview.jpg"
-			data-srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x"
-			alt="Start HTML5 Template"> -->
     <div class="page_wrapper">
       <header class="header">
         <div class="container">
@@ -62,83 +57,139 @@
         style="background-image: url(img/main_banner.jpg)"
       >
         <div class="container">
-          <div class="flex_row">
+          <div class="flex_row main_banner_row">
             <div class="text_col">
               <h1>сонячні електростанції</h1>
               <h2>ПІДКЛЮЧЕННЯ «ЗЕЛЕНОГО» ТАРИФу</h2>
               <h3>Переваги сонячної енергетики</h3>
               <div class="banner_btns">
-                <a href="#" class="banner_btn">Lorem ipsum dolor sit</a>
-                <a href="#" class="banner_btn">Lorem ipsum dolor sit</a>
-                <a href="#" class="banner_btn">Lorem ipsum dolor sit</a>
+                <a href="#" class="banner_btn one">Lorem ipsum dolor sit</a>
+                <a href="#" class="banner_btn two">Lorem ipsum dolor sit</a>
+                <a href="#" class="banner_btn three">Lorem ipsum dolor sit</a>
               </div>
             </div>
             <div class="form_col">
-              <form class="callback clearfix">
-                <h3 class="form_header">Безкоштовний розрахунок</h3>
-                <p class="form_text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
-                </p>
-                <div class="success">
-                  <span
-                    class="close_succes"
-                    onclick="event.preventDefault(); $('.success').removeClass('active').hide();"
-                  ></span>
-                  <span class="success_text text-center"
-                    >Ваше повідомлення надіслано, <br />ми скоро Вам
-                    зателефонуємо</span
-                  >
-                </div>
-                <!-- Hidden Required Fields -->
-                <input
-                  type="hidden"
-                  name="project_name"
-                  value="KS Solar - Сонячні станції"
-                />
-                <input type="hidden" name="admin_email" value="mail@mail.com" />
-                <!-- Admin email -->
-                <input
-                  type="hidden"
-                  name="form_subject"
-                  value="Страница KS Solar"
-                />
-                <input type="hidden" name="page" value="Страница KS Solar" />
-                <!-- END Hidden Required Fields -->
-                <div class="input_wrapper clearfix">
-                  <div class="input_box">
-                    <label for="user_name">Ваше ім’я</label>
-                    <input
-                      class="reset"
-                      type="text"
-                      name="Name"
-                      id="user_name"
-                      placeholder="Ім’я"
-                      required
-                    />
-                  </div>
-                  <div class="input_box">
-                    <label for="user_phone">Номер телефону</label>
-                    <input
-                      class="reset"
-                      type="tel"
-                      name="Phone"
-                      id="user_phone"
-                      placeholder="Номер телефону"
-                      required
-                    />
-                  </div>
+              <form class="callback callback_banner clearfix">
+                <div class="form_content_wrapper">
+                  <h3 class="form_header">Безкоштовний розрахунок</h3>
                   <p class="form_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida.
                   </p>
+                  <div class="success">
+                    <span
+                      class="close_succes"
+                      onclick="event.preventDefault(); $('.success').removeClass('active').hide();"
+                    ></span>
+                    <span class="success_text text-center"
+                      >Ваше повідомлення надіслано, <br />ми скоро Вам
+                      зателефонуємо</span
+                    >
+                  </div>
+                  <!-- Hidden Required Fields -->
+                  <input
+                    type="hidden"
+                    name="project_name"
+                    value="KS Solar - Сонячні станції"
+                  />
+                  <input
+                    type="hidden"
+                    name="admin_email"
+                    value="mail@mail.com"
+                  />
+                  <!-- Admin email -->
+                  <input
+                    type="hidden"
+                    name="form_subject"
+                    value="Страница KS Solar"
+                  />
+                  <input type="hidden" name="page" value="Страница KS Solar" />
+                  <!-- END Hidden Required Fields -->
+                  <div class="input_wrapper clearfix">
+                    <div class="input_box">
+                      <input
+                        class="reset"
+                        type="text"
+                        name="Name"
+                        id="user_name"
+                        placeholder="Ім’я"
+                        required
+                      />
+                    </div>
+                    <div class="input_box">
+                      <input
+                        class="reset"
+                        type="tel"
+                        name="Phone"
+                        id="user_phone"
+                        placeholder="Номер телефону"
+                        required
+                      />
+                    </div>
+                    <p class="form_text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Quis ipsum suspendisse ultrices gravida.
+                    </p>
+                  </div>
                 </div>
                 <div class="fg1">
-                  <button class="sub_button btn">Надіслати</button>
+                  <button class="sub_button btn">Зв'язатися</button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="how_section section">
+        <div class="container">
+          <h3 class="section_header">як працює?</h3>
+          <div class="section_content">
+            <img
+              class="lazy how_img"
+              src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+              data-src="img/@1x/scheme.jpg"
+              data-srcset="img/@1x/scheme.jpg 1x, img/@2x/scheme.jpg 2x"
+              alt="Start HTML5 Template"
+            />
+            <p class="how_section_text">
+              динаміка збільшення кількості сонячних електростанцій приватних
+              домогосподарств
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="case_section section">
+        <div class="container">
+          <h3 class="section_header">у нас немає шаблонів</h3>
+          <div class="section_content flex_row">
+            <div class="case_item flex_row">
+              <img src="img/case1.png" alt="#" class="case_img" />
+              <p class="case_text">
+                у нас немає шаблонів. Використовуємо індивідуальний підхід до
+                кожного клієнта.
+              </p>
+            </div>
+            <div class="case_item flex_row">
+              <img src="img/case2.png" alt="#" class="case_img" />
+              <p class="case_text">
+                Ми працюємо з усім обладнанням офіційно представленим на
+                території України
+              </p>
+            </div>
+            <div class="case_item flex_row">
+              <img src="img/case3.png" alt="#" class="case_img" />
+              <p class="case_text">
+                ми повністю супроводжуємо підключення "Зеленого" тарифу.
+              </p>
+            </div>
+            <div class="case_item flex_row">
+              <img src="img/case4.png" alt="#" class="case_img" />
+              <p class="case_text">
+                Заощаджуємо Ваші кошти. Проектуючи станцію максимально
+                ефективно.
+              </p>
             </div>
           </div>
         </div>
