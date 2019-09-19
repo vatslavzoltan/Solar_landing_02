@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-	// Custom JS
-
+  $(".gallery-item").magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: true
+    }
+  });
 });
