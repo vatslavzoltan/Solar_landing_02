@@ -21,7 +21,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: 'Roboto', sans-serif
+	font-family: 'gotham', sans-serif
 	overflow-x: hidden
 	color: $text
 ul
@@ -361,3 +361,150 @@ a
 		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAABX0lEQVQokW3RT4jOQRzH8dc8qU1SSkqUWhehdVAYB017sHFxoFxRysGBG85qj7j4E4etp/awe12HTYkRmYuDtrjaPdh2OThxkMbhmR/7PO2npqlv8/7M9/P9hlqrkONN3MJSTWVKU8hxATtwu6byrqv3Qo5XcR+7cTrkeNx/PccWvA05PvkHYdqwrrRfruNC6yDiWshxpoN2jkA/2/0K68jYgyO4HHKcDF6fWG2tfcQ9zGI/5nADv/Ee43iMQz0sNeflmkq/pvIHP/AFb/C1Gc3gGfb1sNCgcyHHg1BT+VZTOY9lvGznGLZ1mfob8jwdyTeLF9iO0uUPbU/TuNMeXqqp9EdgIccxg53t7aCANexqbw7XVD6FHCdwqqbyaMig1to5HcWHVl/FXTxEwGecqamsDEENvGgw6s30C+M1lbXexmpNZR5n8X0TaCvGGExvSDWVRRzAA6wY7CzjZNfeX1SxdrUWfpWJAAAAAElFTkSuQmCC')
 	&.facebook
 		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA80lEQVQokZ3SsUoDQRAG4G+P2KUVC7H0GXKNXBrR0kbSWfgKPoCgnW8gVpZBsDdY5LA5AhZ21ulSKGLSWOhauJEgXjz8YZmZnfn5/1k2GHb62EXQDBE3wbATGww/YpLyAjLMlhDGOEE3FlUXPTxg1krSdRjGojr+9lhUk1DmK4itPyxeQijzDBdYxRM2/iLO1+jhcOF+mtUQ+tiORTVK9TV2sI97qFMcx6K6nRexqN4wSLZPlxE3Q5kf4TwW1SyU+RoOUu8F63XEvXRGuMMWzprsOMdris8/G5nmX20RIUP7H8R2C1e+nvo35Y8U3zFNecTgE4+yP6sCDXLjAAAAAElFTkSuQmCC')
+.map_col
+	flex-grow: 1
+	iframe
+		width: 100% !important
+		height: 400px
+.hamburger
+	display: none
+	position: fixed
+	width: 42px
+	height: 35px
+	right: 30px
+	cursor: pointer
+	top: 35px
+	box-sizing: border-box
+	z-index: 55555
+	span
+		display: block
+		background-color: #000
+		height: 4px
+		width: 100%
+		position: absolute
+		top: 50%
+		margin-top: -2px
+		transition: all .3s ease
+	&:before
+		content: ''
+		display: block
+		background-color: #000
+		height: 4px
+		width: 100%
+		position: absolute
+		top: 0
+		transition: all .3s ease
+	&:after
+		content: ''
+		display: block
+		background-color: #000
+		height: 4px
+		width: 100%
+		position: absolute
+		bottom: 0
+		transition: all .3s ease
+	&.active
+		span
+			opacity: 0
+		&:before
+			transform: rotate(45deg)
+			top: 50%
+			margin-top: -2px
+		&:after
+			transform: rotate(-45deg)
+			top: 50%
+			margin-top: -2px
+@media screen and (max-width: 768px)
+	.header
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+		z-index: 10
+	.text_col,.form_col
+		width: 100%
+	.banner_btn
+		margin: 0 auto
+		margin-bottom: 25px
+	.section_content
+		align-items: center
+	.toLeft,.toRight
+		transform: none
+	.advantages_section .section_content.flex_row,.products .section_content.flex_row
+		flex-direction: row
+	.adress_col_header
+		text-align: center
+	.contact_line
+		text-align: left
+		margin: 0 auto
+		font-size: 24px
+		width: 75%
+		margin-bottom: 20px
+	.adress_col
+		text-align: center
+	.products .section_content.flex_row
+		justify-content: flex-start
+	.product_item
+		width: 47%
+		margin-bottom: 30px
+	.adress_col,.map_col
+		margin: 10px 0
+		padding: 0
+		width: 100%
+	.advantages_item
+		width: 320px
+		padding: 20px
+		border-radius: 25px
+		background-color: #fff
+		margin-right: 20px
+		border: 1px solid #d8d8d8
+		min-height: 300px
+	.advantages_text
+		font-size: 14px	
+	.how_section_text
+		font-size: 24px
+	.main_banner
+		padding: 135px 0
+	.hamburger
+		display: block
+	.page_nav,.nav_list,.main_banner_row,.section_content 
+		flex-direction: column
+	.page_nav
+		align-items: center
+		justify-content: center
+		.nav_list,.soc_links
+			display: none
+		&.active
+			min-height: 75vh
+			.soc_links
+				display: flex
+			.nav_list
+				font-size: 18px
+				font-weight: bold
+				flex-grow: 0
+				margin: 50px 0
+				display: flex
+				li
+					margin-right: 0
+					margin-top: 15px
+	.gallery-wrapper
+		margin-right: 0
+@media screen and (max-width: 568px)
+	.banner_btn
+		width: 100%
+	.text_col
+		h1
+			font-size: 32px
+		h2
+			font-size: 30px	
+	.section_header
+		font-size: 24px
+	.advantages_item
+		margin-right: 0
+	.advantages_section .section_content.flex_row, .products .section_content.flex_row
+		align-items: center
+		justify-content: center
+	.product_item
+		width: 90%
+	.form_content_wrapper
+		display: block
