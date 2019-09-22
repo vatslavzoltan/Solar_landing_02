@@ -80,7 +80,7 @@ a
 			width: 100%
 .main_banner
 	background-repeat: no-repeat
-	padding: 95px 0
+	padding: 125px 0
 	background-position: center
 	background-size: cover
 	position: relative
@@ -206,9 +206,14 @@ a
 .case_img
 	height: 60px
 	margin-right: 25px
-.case_text
+.case_header
 	text-transform: uppercase
 	font-size: 18px
+	font-weight: 500
+.case_text
+	text-transform: uppercase
+	font-size: 10px
+	font-weight: 600
 .case_section
 	background-color: #f0f0f0
 	background-repeat: no-repeat
@@ -221,11 +226,13 @@ a
 		justify-content: space-between
 		background-repeat: no-repeat
 		background-position: center 40%
-		background-size: 350px
+		background-size: 400px
 .advantages_item
-	width: 260px
+	max-width: 350px
+	width: 100%
 	margin-bottom: 120px
 	margin-right: 100px
+	align-items: flex-start
 .advantages_img
 	width: 60px
 	margin-right: 25px
@@ -237,10 +244,12 @@ a
 	font-weight: 400
 .advantages_text
 	font-size: 10px
+	text-transform: uppercase
+	font-weight: 500
 .toLeft
 	transform: translateX(-100px)
 .toRight
-	transform: translateX(100px)
+	transform: translateX(150px)
 .products
 	background-color: #f0f0f0
 	.section_content.flex_row
@@ -414,7 +423,23 @@ a
 			transform: rotate(-45deg)
 			top: 50%
 			margin-top: -2px
+.main_banner_partners
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 5
+	background-color: #fff
+	padding: 20px 40px
+	a
+		margin-right: 55px
+		&:last-child
+			margin-right: 0
+	img
+		height: 65px
 @media screen and (max-width: 768px)
+	.main_banner_partners img
+		height: 45px
 	.header
 		position: fixed
 		top: 0
@@ -458,7 +483,7 @@ a
 		background-color: #fff
 		margin-right: 20px
 		border: 1px solid #d8d8d8
-		min-height: 300px
+		min-height: 530px
 	.advantages_text
 		font-size: 14px	
 	.how_section_text
@@ -490,6 +515,8 @@ a
 	.gallery-wrapper
 		margin-right: 0
 @media screen and (max-width: 568px)
+	.main_banner_partners
+		flex-direction: column
 	.banner_btn
 		width: 100%
 	.text_col
