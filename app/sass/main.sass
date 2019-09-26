@@ -158,14 +158,26 @@ a
 	.form_content_wrapper
 		padding: 40px 50px
 		padding-bottom: 0
+		position: relative
 	input
 		width: 100%
 		padding: 25px 10px
 		text-align: center
 		text-transform: uppercase
 		margin-bottom: 25px
+.form_content_wrapper
+	position: relative
 .success
 	display: none
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	font-size: 24px
+	left: 0
+	background-color: rgba(255,255,255,.9)
+	align-items: center
+	justify-content: center
 .form_header
 	text-align: center
 	font-size: 25px
@@ -183,7 +195,7 @@ a
 	text-transform: uppercase
 	margin-bottom: 90px
 .section
-	padding: 100px 0
+	padding: 80px 0
 .how_img
 	width: 100%
 .how_section_text
@@ -233,12 +245,16 @@ a
 	margin-bottom: 120px
 	margin-right: 100px
 	align-items: flex-start
+	&:last-child
+		margin-bottom: 0
+	&:nth-last-child(2)
+		margin-bottom: 0
 .advantages_img
 	width: 60px
-	margin-right: 25px
+	margin-right: 15px
 .advantages_item_header
 	margin: 0
-	margin-bottom: 20px
+	margin-bottom: 5px
 	font-size: 18px
 	text-transform: uppercase
 	font-weight: 400
@@ -438,6 +454,10 @@ a
 	img
 		height: 65px
 @media screen and (max-width: 768px)
+	.cerfs_header
+		font-size: 24px
+	.case_item
+		margin-bottom: 50px
 	.main_banner_partners img
 		height: 45px
 	.header
@@ -514,6 +534,7 @@ a
 					margin-top: 15px
 	.gallery-wrapper
 		margin-right: 0
+		justify-content: center
 @media screen and (max-width: 568px)
 	.main_banner_partners
 		flex-direction: column
@@ -526,8 +547,15 @@ a
 			font-size: 30px	
 	.section_header
 		font-size: 24px
+		margin-bottom: 50px
 	.advantages_item
 		margin-right: 0
+		min-height: 0
+		margin-bottom: 50px
+		&:last-child
+			margin-bottom: 50px
+		&:nth-last-child(2)
+			margin-bottom: 50px
 	.advantages_section .section_content.flex_row, .products .section_content.flex_row
 		align-items: center
 		justify-content: center

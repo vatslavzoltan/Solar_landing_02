@@ -1,574 +1,534 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
+<head>
+  <meta charset="utf-8" />
 
-    <title>OptimizedHTML 5</title>
-    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+  <title>KS Solar</title>
+  <meta
+          name="description"
+          content="KS Solar. Сонячні станції - ідеальне рішення для автономного поливу"
+  />
 
-    <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width" />
 
-    <link rel="icon" href="img/favicon.png" />
-    <meta property="og:image" content="img/@1x/preview.jpg" />
+  <link rel="icon" href="img/favicon.ico" />
+  <meta property="og:image" content="img/@1x/preview.jpg" />
 
-    <link rel="stylesheet" href="css/styles.min.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="css/styles.min.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style>
+        /*Hotfix will remove later*/
+        .product_item:last-child .prod_img{
+            width: 200px;
+        }
+	.gallery-wrapper{justify-content: center}
+    @media screen and (min-width: 768px){
+        .how_img{min-height: 550px}
+    }
+	.cerfs_header{font-size: 24px}
+	.section_header{margin-bottom: 60px}
 
-  <body>
-    <div class="hamburger">
-      <span></span>
-    </div>
-    <div class="page_wrapper">
-      <header class="header">
-        <div class="container">
-          <nav class="nav">
-            <div class="flex_row page_nav">
-              <a href="#" class="logo_wrapper">
-                <img src="img/logo.svg" alt="#" />
-              </a>
-              <ul class="nav_list flex_row">
-                <li>
-                  <a href="#how_section">Як це працює</a>
-                </li>
-                <li>
-                  <a href="#case_section">як ми працюєм</a>
-                </li>
-                <li>
-                  <a href="#advantages_section">КЕЙС</a>
-                </li>
-                <li>
-                  <a href="#products">пакети</a>
-                </li>
-                <li>
-                  <a href="#cerfs_section">чому мы?</a>
-                </li>
-              </ul>
-              <div class="soc_links">
-                <a href="https://www.facebook.com/solarstatio/" target="_blank">
-                  <img src="img/fb.svg" alt="#" />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCOGKetHQTLwJeuWDyGBnwRg"
-                  target="_blank"
-                >
-                  <img src="img/youtube.svg" alt="#" />
-                </a>
-              </div>
-            </div>
-          </nav>
+    </style>
+</head>
+
+<body>
+<div class="hamburger">
+  <span></span>
+</div>
+<div class="page_wrapper">
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="flex_row page_nav">
+          <a href="#" class="logo_wrapper">
+            <img src="img/logo.svg" alt="#" />
+          </a>
+          <ul class="nav_list flex_row">
+            <li>
+              <a href="#how_section">Як це працює</a>
+            </li>
+            <li>
+              <a href="#case_section">як ми працюєм</a>
+            </li>
+            <li>
+              <a href="#advantages_section">КЕЙС</a>
+            </li>
+            <li>
+              <a href="#products">пакети</a>
+            </li>
+            <li>
+              <a href="#cerfs_section">чому мы?</a>
+            </li>
+          </ul>
+          <div class="soc_links">
+            <a href="https://www.facebook.com/solarstatio/" target="_blank">
+              <img src="img/fb.svg" alt="#" />
+            </a>
+            <a
+                    href="https://www.youtube.com/channel/UCOGKetHQTLwJeuWDyGBnwRg"
+                    target="_blank"
+            >
+              <img src="img/youtube.svg" alt="#" />
+            </a>
+          </div>
         </div>
-      </header>
-      <div
-        class="main_banner"
-        style="background-image: url(img/main_banner.jpg)"
-      >
-        <div class="container">
-          <div class="flex_row main_banner_row">
-            <div class="text_col">
-              <h1>сонячні електростанції</h1>
-              <h2>ПІДКЛЮЧЕННЯ «ЗЕЛЕНОГО» ТАРИФу</h2>
-              <h3>Переваги сонячної енергетики</h3>
-              <div class="banner_btns">
-                <a href="#" class="banner_btn one">Lorem ipsum dolor sit</a>
-                <a href="#" class="banner_btn two">Lorem ipsum dolor sit</a>
-                <a href="#" class="banner_btn three">Lorem ipsum dolor sit</a>
+      </nav>
+    </div>
+  </header>
+  <div
+          class="main_banner"
+          style="background-image: url(img/main_banner.jpg)"
+  >
+    <div class="container">
+      <div class="flex_row main_banner_row">
+        <div class="text_col">
+          <h1>сонячні електростанції</h1>
+          <h2>ПІДКЛЮЧЕННЯ «ЗЕЛЕНОГО» ТАРИФу</h2>
+          <h3></h3>
+          <div class="banner_btns">
+            <a href="#" class="banner_btn one">Послуга під ключ</a>
+            <a href="#" class="banner_btn two">багаторічний досвід</a>
+            <a href="#" class="banner_btn three">задоволені клієнти</a>
+          </div>
+        </div>
+        <div class="form_col">
+          <form class="callback callback_banner clearfix">
+            <div class="form_content_wrapper">
+              <h3 class="form_header">Безкоштовний розрахунок</h3>
+              <p class="form_text">
+                ЗАПОВНИ ФОРМУ ТА ОТРИМАЙ КОМПЛЕКСНУ КОНСУЛЬТАЦІЮ
+              </p>
+              <div class="success">
+                    <span
+                            class="close_succes"
+                            onclick="event.preventDefault(); $('.success').removeClass('active').hide();"
+                    ></span>
+                <span class="success_text text-center"
+                >Ваше повідомлення надіслано, <br>ми скоро Вам
+                      зателефонуємо</span
+                >
+              </div>
+              <!-- Hidden Required Fields -->
+              <input
+                      type="hidden"
+                      name="project_name"
+                      value="KS Solar - Зелёный тариф"
+              />
+              <input
+                      type="hidden"
+                      name="admin_email"
+                      value="info@kssolar.com.ua"
+              />
+               Admin email
+              <input
+                      type="hidden"
+                      name="form_subject"
+                      value="KS Solar - Зелёный тариф"
+              />
+              <input type="hidden" name="page" value="KS Solar - Зелёный тариф" />
+              <!-- END Hidden Required Fields -->
+              <div class="input_wrapper clearfix">
+                <div class="input_box">
+                  <input
+                          class="reset"
+                          type="text"
+                          name="user_name"
+                          id="user_name"
+                          placeholder="Ім’я"
+                          required
+                  />
+                </div>
+                <div class="input_box">
+                  <input
+                          class="reset"
+                          type="tel"
+                          name="user_phone"
+                          id="user_phone"
+                          placeholder="Номер телефону"
+                          required
+                  />
+                </div>
+                <p class="form_text"></p>
               </div>
             </div>
-            <div class="form_col">
-              <form class="callback callback_banner clearfix">
-                <div class="form_content_wrapper">
-                  <h3 class="form_header">Безкоштовний розрахунок</h3>
-                  <p class="form_text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida.
-                  </p>
-                  <div class="success">
-                    <span
-                      class="close_succes"
-                      onclick="event.preventDefault(); $('.success').removeClass('active').hide();"
-                    ></span>
-                    <span class="success_text text-center"
-                      >Ваше повідомлення надіслано, <br />ми скоро Вам
-                      зателефонуємо</span
-                    >
-                  </div>
-                  <!-- Hidden Required Fields -->
-                  <input
+            <div class="fg1">
+              <button class="sub_button btn">Надіслати</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="main_banner_partners flex_row">
+      <a href="#">
+        <img src="img/solis.png" alt="#" />
+      </a>
+      <a href="#">
+        <img src="img/suntech.png" alt="#" />
+      </a>
+    </div> -->
+  </div>
+  <div class="how_section section">
+    <div id="how_section"></div>
+    <div class="container">
+      <h3 class="section_header">як працює?</h3>
+      <div class="section_content">
+        <img
+                class="lazy how_img"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/scheme.jpg"
+                data-srcset="img/scheme.jpg 1x, img/@2x/scheme.jpg 2x"
+                alt="Start HTML5 Template"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="case_section section">
+    <div id="case_section"></div>
+    <div class="container">
+      <h3 class="section_header">Індивідуальний План проекту</h3>
+      <div class="section_content flex_row">
+        <div class="case_item flex_row">
+          <img src="img/case1.png" alt="#" class="case_img" />
+          <div>
+            <h4 class="case_header">особистий підхід</h4>
+            <p class="case_text">
+              Ми оберемо найкращий варіант обладнання та його розміщення,
+              щоб використати наявну площу з найбільшою ефективністю
+            </p>
+          </div>
+        </div>
+        <div class="case_item flex_row">
+          <img src="img/case2.png" alt="#" class="case_img" />
+          <div>
+            <h4 class="case_header">ГарантіЯ та СерВіС</h4>
+            <p class="case_text">
+              Швидкісна заміна обладнання при настанні гарантійного випадку
+              дає змогу станції&nbsp; працювати практично безперебійно
+            </p>
+          </div>
+        </div>
+        <div class="case_item flex_row">
+          <img src="img/case3.png" alt="#" class="case_img" />
+          <div>
+            <h4 class="case_header">Ціна та ЯкіСть</h4>
+            <p class="case_text">
+              Ми пропонуємо виключно сертифіковане та якісне обладнання , що
+              гарантує клієнту оптимальне співвідношення ціни та якості
+              проекту
+            </p>
+          </div>
+        </div>
+        <div class="case_item flex_row">
+          <img src="img/case4.png" alt="#" class="case_img" />
+          <div>
+            <h4 class="case_header">ПрОзОріСть та дОкуМентаЦіЯ</h4>
+            <p class="case_text">
+              Всі роботи проводяться згідно будівельних норм. При завершенні
+              монтажу станції Замовник отримує всю технічну та гарантійну
+              документацію
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section advantages_section">
+    <div id="advantages_section"></div>
+    <div class="container">
+      <h3 class="section_header">Переваги</h3>
+      <div
+              class="section_content flex_row"
+              style="background-image: url(img/sun_pane.png)"
+      >
+        <div class="advantages_item flex_row">
+          <img
+                  src="img/advantages_icons/1.png"
+                  alt="#"
+                  class="advantages_img"
+          />
+          <div>
+            <h4 class="advantages_item_header">«ЗЕЛЕНИЙ» ТАРИФ</h4>
+            <p class="advantages_text">
+              Не потрібна ліцензія та інші дозвільні документи. держава
+              викуповує надлишкову електроенергію у приватних осіб по
+              «Зеленому» тарифу.&nbsp;
+            </p>
+          </div>
+        </div>
+        <div class="advantages_item flex_row ">
+          <img
+                  src="img/advantages_icons/2.png"
+                  alt="#"
+                  class="advantages_img"
+          />
+          <div>
+            <h4 class="advantages_item_header">ГНУЧКІСТЬ</h4>
+            <p class="advantages_text">
+              Сонячна електростанція - одна з найбільш універсальних систем
+              енергопостачання, оскільки вироблену електроенергію Ви можете
+              споживати, акумулювати або продавати
+            </p>
+          </div>
+        </div>
+        <div class="advantages_item flex_row toLeft ">
+          <img
+                  src="img/advantages_icons/3.png"
+                  alt="#"
+                  class="advantages_img"
+          />
+          <div>
+            <h4 class="advantages_item_header">
+              відсутні витрати на експлуатацію
+            </h4>
+            <p class="advantages_text">
+              Сонячна електростанція працює повністю автоматично, а тому не
+              потребує додаткового технічного персоналу та витрат на
+              експлуатацію.&nbsp;
+            </p>
+          </div>
+        </div>
+        <div class="advantages_item flex_row toRight">
+          <img
+                  src="img/advantages_icons/4.png"
+                  alt="#"
+                  class="advantages_img"
+          />
+          <div>
+            <h4 class="advantages_item_header">ЗАХИСТ ВІД ІНФЛЯЦІЇ</h4>
+            <p class="advantages_text">
+              СОНЯЧНА ЕЛЕКТРОСТАНЦІЯ - ЕФЕКТИВНИЙ СПОСІБ ЗБЕРЕГТИ ГРОШІ ВІД
+              ІНФЛЯЦІЇ, АДЖЕ ВИПЛАТИ ЩО ВИ ОТРИМУЄТЕ ЗА "ЗЕЛЕНИМ" ТАРИФОМ,
+              ПРИВ'ЯЗАНІ ДО КУРСУ ЕВРО.
+            </p>
+          </div>
+        </div>
+        <div class="advantages_item flex_row">
+          <img
+                  src="img/advantages_icons/5.png"
+                  alt="#"
+                  class="advantages_img"
+          />
+          <div>
+            <h4 class="advantages_item_header">ДЕРЖАВНІ ГАРАНТІЇ</h4>
+            <p class="advantages_text">
+              Процес отримання виплат за «Зеленим» тарифом гарантується
+              державою згідно Закону України&nbsp; "Про енергетику" та
+              контролюється низкою міжнародних організацій.
+            </p>
+          </div>
+        </div>
+        <div class="advantages_item flex_row">
+          <img
+                  src="img/advantages_icons/6.png"
+                  alt="#"
+                  class="advantages_img"
+          />
+          <div>
+            <h4 class="advantages_item_header">
+              інтеграція в господарстві
+            </h4>
+            <p class="advantages_text">
+              Встановлюючи сонячну електростанцію, можливо i потрібно
+              використовувати наявні будівлі та споруди, адже це дозволяє
+              зменшити капітальні витрати та прискорити терміни будівництва.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section products">
+    <div id="products"></div>
+    <div class="container">
+      <h3 class="section_header">пакети</h3>
+      <div class="section_content flex_row">
+        <div class="product_item">
+          <div class="product_content">
+            <h4 class="product_header">10 КВТ<br></h4>
+            <img src="img/lite.png" alt="#" class="prod_img" />
+            <p class="product_mark">Сонячна батарея + Інвертор&nbsp;</p>
+            <p class="product_descr">Сонячня батарея - 32 шт. Інвертор з потужністю - 10 кВт. Фази - 3. Гарантія 10 років! Ціна 5850$</p>
+          </div>
+          <a href="https://kssolar.com.ua/sonyachni-paneli" class="product_link">Детальніше</a>
+        </div>
+        <div class="product_item">
+          <div class="product_content">
+            <h4 class="product_header">20 КВТ&nbsp;<br></h4>
+            <img src="img/medium.png" alt="#" class="prod_img" />
+            <p class="product_mark">Сонячна батарея + Інвертор&nbsp;</p>
+            <p class="product_descr">Сонячня батарея - 64 шт. Інвертор з потужністю - 20 кВт. Фази - 3. Гарантія 10 років! Ціна 10450$</p>
+          </div>
+          <a href="https://kssolar.com.ua/sonyachni-paneli" class="product_link">Детальніше</a>
+        </div>
+        <div class="product_item">
+          <div class="product_content">
+            <h4 class="product_header">30 КВТ<br></h4>
+            <img src="img/premium.jpg" alt="#" class="prod_img" />
+            <p class="product_mark">Сонячна батарея + Інвертор&nbsp;</p>
+            <p class="product_descr">Сонячня батарея - 96 шт. Інвертор з потужністю - 30 кВт. Фази - 3. Гарантія 10 років! Ціна 15540$</p>
+          </div>
+          <a href="https://kssolar.com.ua/sonyachni-paneli" class="product_link">Детальніше</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section form_section">
+    <div class="container">
+      <h3 class="section_header">Замовити сонячну електростанцію</h3>
+      <div class="section_content">
+        <p class="bigger_text">
+          Для того, що замовити сонячну електростанцію заповніть форму нижче та натисніть "Надіслати", в найкоротший термін з вами зв'яжеться наш спеціаліст для прорахунку вашої Сонячної Електростанції</p>
+        <form class="callback callback_page  clearfix">
+          <div class="form_content_wrapper flex_row">
+            <div class="success">
+                  <span
+                          class="close_succes"
+                          onclick="event.preventDefault(); $('.success').removeClass('active').hide();"
+                  ></span>
+              <span class="success_text text-center"
+              >Ваше повідомлення надіслано, <br>ми скоро Вам
+                    зателефонуємо</span
+              >
+            </div>
+            <!-- Hidden Required Fields -->
+            <input
                     type="hidden"
                     name="project_name"
-                    value="KS Solar - Сонячні станції"
-                  />
-                  <input
-                    type="hidden"
-                    name="admin_email"
-                    value="mail@mail.com"
-                  />
-                  <!-- Admin email -->
-                  <input
+                    value="KS Solar - Зелёный тариф"
+            />
+            <input type="hidden" name="admin_email" value="info@kssolar.com.ua" />
+            <!-- Admin email -->
+            <input
                     type="hidden"
                     name="form_subject"
-                    value="Страница KS Solar"
-                  />
-                  <input type="hidden" name="page" value="Страница KS Solar" />
-                  <!-- END Hidden Required Fields -->
-                  <div class="input_wrapper clearfix">
-                    <div class="input_box">
-                      <input
-                        class="reset"
-                        type="text"
-                        name="Name"
-                        id="user_name"
-                        placeholder="Ім’я"
-                        required
-                      />
-                    </div>
-                    <div class="input_box">
-                      <input
-                        class="reset"
-                        type="tel"
-                        name="Phone"
-                        id="user_phone"
-                        placeholder="Номер телефону"
-                        required
-                      />
-                    </div>
-                    <p class="form_text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
-                    </p>
-                  </div>
-                </div>
-                <div class="fg1">
-                  <button class="sub_button btn">Зв'язатися</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="main_banner_partners flex_row">
-          <a href="#">
-            <img src="img/solis.png" alt="#" />
-          </a>
-          <a href="#">
-            <img src="img/suntech.png" alt="#" />
-          </a>
-        </div>
-      </div>
-      <div class="how_section section">
-        <div id="how_section"></div>
-        <div class="container">
-          <h3 class="section_header">як працює?</h3>
-          <div class="section_content">
-            <img
-              class="lazy how_img"
-              src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-              data-src="img/scheme.jpg"
-              data-srcset="img/scheme.jpg 1x, img/@2x/scheme.jpg 2x"
-              alt="Start HTML5 Template"
+                    value="KS Solar - Зелёный тариф"
             />
-          </div>
-        </div>
-      </div>
-      <div class="case_section section">
-        <div id="case_section"></div>
-        <div class="container">
-          <h3 class="section_header">у нас немає шаблонів</h3>
-          <div class="section_content flex_row">
-            <div class="case_item flex_row">
-              <img src="img/case1.png" alt="#" class="case_img" />
-              <div>
-                <h4 class="case_header">ОСОблиВОСті Об’єкту</h4>
-                <p class="case_text">
-                  Різні виробники обладнання пропонують декілька варіантів
-                  фотогальванічних модулів, які відрізняються за розміром та
-                  потужністю. Щоб використати площу з найбільшою ефективністю,
-                  ми оберемо найкращий варіант обладнання та розміщення.
-                </p>
-              </div>
+            <input type="hidden" name="page" value="KS Solar - Зелёный тариф" />
+            <div class="input_box">
+              <input
+                      class="reset"
+                      type="text"
+                      name="user_name"
+                      id="user_name"
+                      placeholder="Ім’я"
+                      required
+              />
             </div>
-            <div class="case_item flex_row">
-              <img src="img/case2.png" alt="#" class="case_img" />
-              <div>
-                <h4 class="case_header">ГарантіЯ та СерВіС</h4>
-                <p class="case_text">
-                  Купуючи обладнання з нами, Ви можете бути впевненими в швидкій
-                  його заміні при настанні гарантійного випадку. Наші зусилля
-                  направлені на те, щоб Ваша сонячна електростанція працювала
-                  ефективно та без збоїв тривалий час.
-                </p>
-              </div>
+            <div class="input_box">
+              <input
+                      class="reset"
+                      type="tel"
+                      name="user_phone"
+                      id="user_phone"
+                      placeholder="Номер телефону"
+                      required
+              />
             </div>
-            <div class="case_item flex_row">
-              <img src="img/case3.png" alt="#" class="case_img" />
-              <div>
-                <h4 class="case_header">Ціна та ЯкіСть</h4>
-                <p class="case_text">
-                  З темпами розвитку сфери альтернативної енергетики
-                  розвиваються не тільки компанії-виробники обладнання. Нажаль,
-                  факти шахрайства та підробок стають дедалі поширеними. Щоб
-                  залишатися з Вами та підтримувати ефективність виробітку Вашої
-                  сонячної станції, ми пропонуємо сертефіковане обладнання
-                  тільки перевірених постачальників та виробників.
-                </p>
-              </div>
-            </div>
-            <div class="case_item flex_row">
-              <img src="img/case4.png" alt="#" class="case_img" />
-              <div>
-                <h4 class="case_header">ПрОзОріСть та дОкуМентаЦіЯ</h4>
-                <p class="case_text">
-                  Ми зацікавлені щоб об’єкт сонячної електростанції, який був
-                  побудований нашою командою став зрозумілим для спеціалістів,
-                  які будуть його обслуговувати. Для цього, після закінчення
-                  монтажних робіт, ми надаємо весь пакет документів
-                  застосованого обладнання та технічну документацію проекту.
-                </p>
-              </div>
+            <div class="input_box">
+              <button class="sub_button btn">Надіслати</button>
             </div>
           </div>
-        </div>
+        </form>
+        <p class="form_s_text">2016 рік став знаковим з точки зору переходу українців на чисті джерела енергії. Сонячна енергетика уже є самим дешевим джерелом енергії в багатьох державах світу в довгостроковій перспективі. Україна не є виключенням. Компанія ТОВ «КС СОЛАР» підтримує даний напрямок розвитку та є офіційним представником в центральній Україні таких провідних компаній, як «УС СОЛАР» (м. Київ) та «РЕНТЕХНО» (м. Київ)</p>
       </div>
-      <div class="section advantages_section">
-        <div id="advantages_section"></div>
-        <div class="container">
-          <h3 class="section_header">Переваги</h3>
-          <div
-            class="section_content flex_row"
-            style="background-image: url(img/sun_pane.png)"
+    </div>
+  </div>
+<div id="cerfs_section"></div>
+  <div class="cerfs_section section">
+    
+    <div class="container">
+      <h3 class="section_header">Чому ми?</h3>
+      <div class="section_content">
+        <p class="cerfs_header">"КС Солар" - це якісне обладнання, дипломовані спеціалісти, міжнародне партнерство з виробниками, гарантія та своєчасне сервісне обслуговування існуючих станцій. Працюйте з профессіоналами.&nbsp;</p>
+        <div class="flex_row gallery-wrapper">
+          <a
+                  href="img/cert/1.jpg"
+                  class="gallery-item"
           >
-            <div class="advantages_item flex_row">
-              <img
-                src="img/advantages_icons/1.png"
-                alt="#"
-                class="advantages_img"
-              />
-              <div>
-                <h4 class="advantages_item_header">«ЗЕЛЕНИЙ» ТАРИФ</h4>
-                <p class="advantages_text">
-                  Додатковим стимулюючим фактором стало прийняття механізму
-                  розвитку галузі через «зелений» тариф, завдяки якому
-                  привабливість сонячних електростанцій в Українi вийшла на
-                  новий рівень
-                </p>
-              </div>
-            </div>
-            <div class="advantages_item flex_row ">
-              <img
-                src="img/advantages_icons/2.png"
-                alt="#"
-                class="advantages_img"
-              />
-              <div>
-                <h4 class="advantages_item_header">ГНУЧКІСТЬ</h4>
-                <p class="advantages_text">
-                  Сонячна електростанція - одна з найбільш універсальних систем
-                  енергопостачання, оскільки можна продавати електроенергію в
-                  мережу, використовувати і для власних потреб, як постійно, так
-                  i акумулювати енергіо для споживання пізнішe, в період
-                  відсутності її в мережі, тим самим бути енергонезалежним.
-                </p>
-              </div>
-            </div>
-            <div class="advantages_item flex_row toLeft ">
-              <img
-                src="img/advantages_icons/3.png"
-                alt="#"
-                class="advantages_img"
-              />
-              <div>
-                <h4 class="advantages_item_header">НЕЗНАЧНІ ПОТОЧНІ ВИТРАТИ</h4>
-                <p class="advantages_text">
-                  Сонячна електростанція працює повністю автоматично, не
-                  потребує додаткового технічного персоналу та значних витрат на
-                  обслуговування, отже не відволікає власника від основної
-                  діяльності господарства
-                </p>
-              </div>
-            </div>
-            <div class="advantages_item flex_row toRight">
-              <img
-                src="img/advantages_icons/4.png"
-                alt="#"
-                class="advantages_img"
-              />
-              <div>
-                <h4 class="advantages_item_header">ЗАХИСТ ВІД ІНФЛЯЦІЇ</h4>
-                <p class="advantages_text">
-                  Сонячна електростанція - ефективний спосіб зберегти гроші від
-                  інфляції, адже при будівництві гроші інвестують у гривні, а
-                  отримують прибуток від продажу електроенергії в прив’язці до
-                  курсу євро.
-                </p>
-              </div>
-            </div>
-            <div class="advantages_item flex_row">
-              <img
-                src="img/advantages_icons/5.png"
-                alt="#"
-                class="advantages_img"
-              />
-              <div>
-                <h4 class="advantages_item_header">ДЕРЖАВНІ ГАРАНТІЇ</h4>
-                <p class="advantages_text">
-                  Сонячна енергетика - це динамічний процес, прибуток якого
-                  гарантовано державою в Законі України «Про електроенергетику».
-                  Слід знати, що за виконанням цього закону стежить не тільки
-                  Україна, а й низка міжнародних організацій.
-                </p>
-              </div>
-            </div>
-            <div class="advantages_item flex_row">
-              <img
-                src="img/advantages_icons/6.png"
-                alt="#"
-                class="advantages_img"
-              />
-              <div>
-                <h4 class="advantages_item_header">
-                  ПРОСТА ІНТЕГРАЦІЯ В НАЯВНУ ІНФРАСТРУКТУРУ
-                </h4>
-                <p class="advantages_text">
-                  Встановлюючи сонячну електростанцію, можливо i потрібно
-                  використовувати наявну інфраструктуру будівель та споруд, адже
-                  це дозволяє зменшити капітальні витрати та прискорити терміни
-                  будівництва.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section products">
-        <div id="products"></div>
-        <div class="container">
-          <h3 class="section_header">пакети</h3>
-          <div class="section_content flex_row">
-            <div class="product_item">
-              <div class="product_content">
-                <h4 class="product_header">
-                  Пакет <br />
-                  Lite
-                </h4>
-                <img src="img/lite.png" alt="#" class="prod_img" />
-                <p class="product_mark">
-                  Сонячний фотоелектричний модуль JA Solar JAM60S01-305 / PR 305
-                  mono
-                </p>
-                <p class="product_descr">
-                  Сонячні електростанції розкривають великі можливості, тому без
-                  роздумів потрібно купити сонячні батареї (панелі) в
-                  Кіровограді (Кропивницького).
-                </p>
-              </div>
-              <a href="#" class="product_link">Детальніше</a>
-            </div>
-            <div class="product_item">
-              <div class="product_content">
-                <h4 class="product_header">
-                  Пакет <br />
-                  Lite
-                </h4>
-                <img src="img/medium.png" alt="#" class="prod_img" />
-                <p class="product_mark">
-                  Сонячний фотоелектричний модуль JA Solar JAM60S01-305 / PR 305
-                  mono
-                </p>
-                <p class="product_descr">
-                  Сонячні електростанції розкривають великі можливості, тому без
-                  роздумів потрібно купити сонячні батареї (панелі) в
-                  Кіровограді (Кропивницького).
-                </p>
-              </div>
-              <a href="#" class="product_link">Детальніше</a>
-            </div>
-            <div class="product_item">
-              <div class="product_content">
-                <h4 class="product_header">
-                  Пакет <br />
-                  Lite
-                </h4>
-                <img src="img/premium.png" alt="#" class="prod_img" />
-                <p class="product_mark">
-                  Сонячний фотоелектричний модуль JA Solar JAM60S01-305 / PR 305
-                  mono
-                </p>
-                <p class="product_descr">
-                  Сонячні електростанції розкривають великі можливості, тому без
-                  роздумів потрібно купити сонячні батареї (панелі) в
-                  Кіровограді (Кропивницького).
-                </p>
-              </div>
-              <a href="#" class="product_link">Детальніше</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section form_section">
-        <div class="container">
-          <h3 class="section_header">БЕЗКОШТОВНИЙ РОЗРАХУНОК</h3>
-          <div class="section_content">
-            <p class="bigger_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
-            </p>
-            <form class="callback callback_page  clearfix">
-              <div class="form_content_wrapper flex_row">
-                <div class="success">
-                  <span
-                    class="close_succes"
-                    onclick="event.preventDefault(); $('.success').removeClass('active').hide();"
-                  ></span>
-                  <span class="success_text text-center"
-                    >Ваше повідомлення надіслано, <br />ми скоро Вам
-                    зателефонуємо</span
-                  >
-                </div>
-                <!-- Hidden Required Fields -->
-                <input
-                  type="hidden"
-                  name="project_name"
-                  value="KS Solar - Сонячні станції"
-                />
-                <input type="hidden" name="admin_email" value="mail@mail.com" />
-                <!-- Admin email -->
-                <input
-                  type="hidden"
-                  name="form_subject"
-                  value="Страница KS Solar"
-                />
-                <input type="hidden" name="page" value="Страница KS Solar" />
-                <!-- END Hidden Required Fields -->
-                <div class="input_box">
-                  <input
-                    class="reset"
-                    type="text"
-                    name="Name"
-                    id="user_name"
-                    placeholder="Ім’я"
-                    required
-                  />
-                </div>
-                <div class="input_box">
-                  <input
-                    class="reset"
-                    type="tel"
-                    name="Phone"
-                    id="user_phone"
-                    placeholder="Номер телефону"
-                    required
-                  />
-                </div>
-                <div class="input_box">
-                  <button class="sub_button btn">розрахувати</button>
-                </div>
-              </div>
-            </form>
-            <p class="form_s_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="cerfs_section section">
-        <div id="cerfs_section"></div>
-        <div class="container">
-          <h3 class="section_header">Чому ми?</h3>
-          <div class="section_content">
-            <p class="cerfs_header">
-              10500 років на ринку, мільйон грамот, купа сертифікатів, відомим
-              брендам, кваліфікована команда фахівців.
-            </p>
-            <div class="flex_row gallery-wrapper">
-              <a
-                href="https://via.placeholder.com/250x650"
+            <img src="img/cert/1.jpg" alt="#"
+            /></a>
+          <a
+                  href="img/cert/2.jpg"
+                  class="gallery-item"
+          >
+            <img src="img/cert/2.jpg" alt="#"
+            /></a>
+          <a
+                  href="img/cert/3.jpg"
+                  class="gallery-item"
+          >
+            <img src="img/cert/3.jpg" alt="#"
+            /></a>
+<!--          <a-->
+<!--                  href="img/cert/4.jpg"-->
+<!--                  class="gallery-item"-->
+<!--          >-->
+<!--            <img src="img/cert/4.jpg" alt="#"-->
+<!--            /></a>-->
+          <a
+                  href="img/cert/5.jpg"
+                  class="gallery-item"
+          >
+            <img src="img/cert/5.jpg" alt="#"
+            /></a>
+          <a
+                href="img/cert/6.jpg"
                 class="gallery-item"
-              >
-                <img src="img/cert.jpg" alt="#"
-              /></a>
-              <a
-                href="https://via.placeholder.com/250x650"
-                class="gallery-item"
-              >
-                <img src="img/cert.jpg" alt="#"
-              /></a>
-              <a
-                href="https://via.placeholder.com/250x650"
-                class="gallery-item"
-              >
-                <img src="img/cert.jpg" alt="#"
-              /></a>
-              <a
-                href="https://via.placeholder.com/250x650"
-                class="gallery-item"
-              >
-                <img src="img/cert.jpg" alt="#"
-              /></a>
-              <a
-                href="https://via.placeholder.com/250x650"
-                class="gallery-item"
-              >
-                <img src="img/cert.jpg" alt="#"
-              /></a>
-              <a
-                href="https://via.placeholder.com/250x650"
-                class="gallery-item"
-              >
-                <img src="img/cert.jpg" alt="#"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section contact_section">
-        <div class="container">
-          <h3 class="section_header">
-            ЯК НАС ЗНАЙТИ!
-          </h3>
-          <div class="section_content flex_row">
-            <div class="adress_col">
-              <h4 class="adress_col_header">
-                Контактна інформація
-              </h4>
-              <p class="adress contact_line">
-                м. Кропивницький, вул. Яновського, 100
-              </p>
-              <a href="tel:+380991500503" class="contact_line phone"
-                >+38 (099) 150-05-03</a
-              >
-              <a href="tel:+380991500508" class="contact_line"
-                >+38 (099) 150-05-08</a
-              >
-              <a href="tel:+380991500505" class="contact_line"
-                >+38 (099) 150-05-05</a
-              >
-              <a
-                href="https://www.facebook.com/solarstatio/"
-                class="contact_line facebook"
-                target="_blank"
-                >KS SOLAR</a
-              >
-            </div>
-            <div class="map_col">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.792724046653!2d32.23832618207104!3d48.49886649343673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d0429151ed4855%3A0x532e32a9c07c77bb!2sSonyachni%20Elektrostantsiyi%20Tov%20%22Ks%20Solar%22!5e0!3m2!1sru!2sua!4v1568979218166!5m2!1sru!2sua"
-                frameborder="0"
-                style="border:0;"
-                allowfullscreen=""
-              ></iframe>
-            </div>
-          </div>
+        >
+          <img src="img/cert/6.jpg" alt="#"
+          /></a>
+          <a
+                  href="img/cert/7.jpg"
+                  class="gallery-item"
+          >
+            <img src="img/cert/7.jpg" alt="#"
+            /></a>
         </div>
       </div>
     </div>
+  </div>
+  <div class="section contact_section">
+    <div class="container">
+      <h3 class="section_header">
+        ЯК НАС ЗНАЙТИ!
+      </h3>
+      <div class="section_content flex_row">
+        <div class="adress_col">
+          <h4 class="adress_col_header">
+            Контактна інформація
+          </h4>
+          <p class="adress contact_line">
+            м. Кропивницький, вул. Яновського, 100
+          </p>
+          <a href="tel:+380991500503" class="contact_line phone"
+          >+38 (099) 150-05-03</a
+          >
+          <a href="tel:+380991500508" class="contact_line"
+          >+38 (099) 150-08-08</a
+          >
+          <a href="tel:+380991500505" class="contact_line"
+          >+38 (099) 150-05-05</a
+          >
+          <a
+                  href="https://www.facebook.com/solarstatio/"
+                  class="contact_line facebook"
+                  target="_blank"
+          >KS SOLAR</a
+          >
+        </div>
+        <div class="map_col">
+          <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.792724046653!2d32.23832618207104!3d48.49886649343673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d0429151ed4855%3A0x532e32a9c07c77bb!2sSonyachni%20Elektrostantsiyi%20Tov%20%22Ks%20Solar%22!5e0!3m2!1sru!2sua!4v1568979218166!5m2!1sru!2sua"
+                  frameborder="0"
+                  style="border:0;"
+                  allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="js/scripts.min.js"></script>
-  </body>
+<script src="js/scripts.min.js"></script>
+</body>
 </html>
